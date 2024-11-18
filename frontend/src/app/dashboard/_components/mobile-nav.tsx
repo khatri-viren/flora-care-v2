@@ -27,7 +27,7 @@ const MobileNav = () => {
           href="/"
           className="font-bold font-hind text-2xl text-accent-foreground"
         >
-          HYDROBUD
+          FloraCare
         </Link>
         <nav className="grid gap-2 text-lg font-medium mt-6">
           <Link

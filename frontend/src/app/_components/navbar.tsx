@@ -17,7 +17,7 @@ const Navbar = () => {
           {/* <Package2 className="h-6 w-6" /> */}
 
           <span className="font-bold text-2xl text-accent-foreground font-hind ">
-            HYDROBUD
+            FloraCare
           </span>
         </Link>
         <SignedIn>
@@ -61,9 +61,9 @@ const Navbar = () => {
               className="flex items-center gap-2 text-lg font-semibold"
             >
               {/* <Package2 className="h-6 w-6" /> */}
-              <span className="text-2xl font-serif font-bold">Hydrobud</span>
+              <span className="text-2xl font-serif font-bold">FloraCare</span>
 
-              <span className="sr-only">Hydrobud</span>
+              <span className="sr-only">FloraCare</span>
             </Link>
             <Link href="/" className="hover:text-foreground">
               Home

@@ -41,7 +41,7 @@ const HeroSection = () => {
           framerProps={{
             show: { transition: { delay: 0.3, duration: 1 } },
           }}
-          text="Hydrobud provides IoT-powered devices that automate your hydroponic setup, so you can enjoy faster, fresher, and homegrown produce effortlessly."
+          text="FloraCare provides IoT-powered devices that automate your hydroponic setup, so you can enjoy faster, fresher, and homegrown produce effortlessly."
         />
       </div>
       {isSignedIn ? (
@@ -65,7 +65,7 @@ const HeroSection = () => {
           </motion.div>
         </Link>
       ) : (
-        <a href="https://accounts.hydrobud.in/sign-up">
+        <a href="https://accounts.FloraCare.in/sign-up">
           <motion.div
             className="z-10 flex min-h-[7rem] items-center justify-center"
             initial={{ opacity: 0, y: -10 }}

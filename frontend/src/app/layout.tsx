@@ -26,7 +26,7 @@ const fontSans = FontSans({
 });
 
 export const metadata: Metadata = {
-  title: "HydroBud",
+  title: "FloraCare",
   description: "Automated Hydroponics with IoT",
 };
 

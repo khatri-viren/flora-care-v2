@@ -7,7 +7,7 @@ const Footer = () => {
     <section className="footer mx-5 md:mx-20 text-primary">
       <div className="hidden md:grid md:grid-cols-1 lg:grid-cols-2 my-10">
         <div className="leftSide grid grid-cols-4">
-          <div className="font-bold text-xl font-hind">HYDROBUD</div>
+          <div className="font-bold text-xl font-hind">FloraCare</div>
           <div className="flex flex-col space-y-1">
             <span className="font-semibold">About Us</span>
             <Link href="/" className="font-light text-sm">
@@ -93,7 +93,7 @@ const Footer = () => {
       <hr className="border border-umedium my-2" />
       <div className="flex justify-between text-xs md:text-sm">
         <div className="leftSide flex mt-2 mb-5">
-          <div>HYDROBUD. All rights reserved.</div>
+          <div>FloraCare. All rights reserved.</div>
           <div className="flex space-x-3 mx-5">
             <Link href="/">Privacy Policy</Link>
             <Link href="/">Terms of service</Link>

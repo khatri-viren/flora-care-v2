@@ -13,7 +13,7 @@ const solutions = [
     Icon: SlidersIcon,
     name: "Automated Control",
     description:
-      "Hydrobud's IoT device monitors key metrics like water pH, temperature, and light, automatically adjusting conditions in real time to ensure optimal growth, freeing you from manual labor.",
+      "FloraCare's IoT device monitors key metrics like water pH, temperature, and light, automatically adjusting conditions in real time to ensure optimal growth, freeing you from manual labor.",
     href: "/",
     cta: "Learn more",
     background: (
@@ -44,7 +44,7 @@ const solutions = [
     Icon: LeafIcon,
     name: "Consistent Growth",
     description:
-      "By maintaining ideal conditions, Hydrobud promotes faster, more consistent, and healthier growth, ensuring better yields and quality produce with less effort.",
+      "By maintaining ideal conditions, FloraCare promotes faster, more consistent, and healthier growth, ensuring better yields and quality produce with less effort.",
     href: "/",
     cta: "Learn more",
     background: (
