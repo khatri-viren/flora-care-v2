@@ -66,7 +66,7 @@ const About = () => {
             framerProps={{
               show: { transition: { duration: 1 } },
             }}
-            text="Hydrobud is on a mission to make fresh, homegrown fruits and vegetables accessible to every urban home. Our cutting-edge hydroponic and aeroponic solutions are designed to empower city dwellers to grow fresh produce right on their balconies, terraces, and walls—saving space, time, and the planet."
+            text="FloraCare is on a mission to make fresh, homegrown fruits and vegetables accessible to every urban home. Our cutting-edge hydroponic and aeroponic solutions are designed to empower city dwellers to grow fresh produce right on their balconies, terraces, and walls—saving space, time, and the planet."
           />
         </div>
       </section>
@@ -100,13 +100,13 @@ const About = () => {
             Our vision is to democratize agriculture and provide every urban
             household with the ability to grow their own fruits and vegetables.
             With modern agriculture contributing to global warming and
-            environmental degradation, Hydrobud aims to reverse this trend by
+            environmental degradation, FloraCare aims to reverse this trend by
             promoting eco-friendly, homegrown solutions that require minimal
             space and resources.
           </p>
         </div>
       </section>
-      <section className="my-12 w-11/12 mx-auto">
+      {/* <section className="my-12 w-11/12 mx-auto">
         <Separator className="my-7" />
         <h2 className="text-xl md:text-2xl lg:text-3xl text-primary font-semibold text-center font-zodiak">
           Meet the Team
@@ -116,7 +116,6 @@ const About = () => {
             <Card key={member.name}>
               <CardHeader>
                 <CardTitle>{member.name}</CardTitle>
-                {/* <CardDescription>Card Description</CardDescription> */}
               </CardHeader>
               <CardContent className="space-y-1">
                 <img
@@ -129,13 +128,10 @@ const About = () => {
                 <p>- {member.job}</p>
                 <p>- {member.interest}</p>
               </CardContent>
-              {/* <CardFooter>
-                <p>Card Footer</p>
-              </CardFooter> */}
             </Card>
           ))}
         </div>
-      </section>
+      </section> */}
       <Footer />
     </>
   );

@@ -7,13 +7,13 @@ importScripts(
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCJ7c2avF8AZSIDVUTLmONyP1tNzyzW2wU",
-  authDomain: "hydrobud-427708.firebaseapp.com",
-  projectId: "hydrobud-427708",
-  storageBucket: "hydrobud-427708.appspot.com",
-  messagingSenderId: "841573962607",
-  appId: "1:841573962607:web:dc8a2b65256175f7914e9a",
-  measurementId: "G-31G6FD2BZL",
+  apiKey: "AIzaSyDsCCP46TCrA7XLrQO5JAB1YoMX_XZx_dk",
+  authDomain: "floracare-db9d6.firebaseapp.com",
+  projectId: "floracare-db9d6",
+  storageBucket: "floracare-db9d6.firebasestorage.app",
+  messagingSenderId: "737200184154",
+  appId: "1:737200184154:web:c66b485fef39631f4ff163",
+  measurementId: "G-RMP14690F2",
 };
 
 firebase.initializeApp(firebaseConfig);
