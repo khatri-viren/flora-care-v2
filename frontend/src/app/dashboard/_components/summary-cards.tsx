@@ -46,7 +46,7 @@ const SummaryCards = ({
               <Skeleton className="h-6 w-full my-1" />
             ) : (
               <div className="text-2xl font-bold">
-                {Number(data.tds).toFixed(2)} ppm
+                {Number(data.TDS).toFixed(2)} ppm
               </div>
             )}
             <p className="text-xs text-muted-foreground">of the water</p>
