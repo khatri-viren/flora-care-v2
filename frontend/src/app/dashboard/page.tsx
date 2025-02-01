@@ -85,7 +85,7 @@ const Dashboard = () => {
     return {
       temperatureData: transformData(data, "temperature"),
       humidityData: transformData(data, "humidity"),
-      uvLightData: transformData(data, "tds"),
+      uvLightData: transformData(data, "UVS"),
       phData: transformData(data, "pH"),
     };
   }, [data]);
