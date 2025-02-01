@@ -10,7 +10,9 @@ export async function sendPumpLogNotification(userFcmToken, pumpLogData) {
   const message = {
     token: userFcmToken, // FCM token of the user
     notification: {
-      title: `Pump ${pumpLogData.status ? "Triggered ON" : "Triggered OFF"}`,
+      title: `${pumpLogData.pumpType} Pump ${
+        pumpLogData.status ? "Triggered ON" : "Triggered OFF"
+      }`,
       body: `Pump ${
         pumpLogData.status ? "turned ON" : "turned OFF"
       } at ${convertFirestoreTimestampToDate(
