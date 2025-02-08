@@ -124,14 +124,17 @@ const Dashboard = () => {
     }
     try {
       setCommandStatus("Sending command...");
-      const response = await fetch(`http://localhost:4000/api/device/command`, {
-        // Using a single endpoint for commands
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ deviceId: deviceId, command: command }), // Include deviceId and command
-      });
+      const response = await fetch(
+        `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/device/command`,
+        {
+          // Using a single endpoint for commands
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ deviceId: deviceId, command: command }), // Include deviceId and command
+        }
+      );
 
       if (response.ok) {
         setCommandStatus(`Command "${command}" sent successfully.`);
