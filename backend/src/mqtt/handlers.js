@@ -79,19 +79,35 @@ export const handleOtherMessages = async (message) => {
         await sendPumpLogNotification(userFcmToken, { ...data, timestamp });
       }
 
-      const dataDoc = await deviceDataRef.add({
-        ...data,
-        timestamp,
-      });
-      const dataId = dataDoc.id;
+      if (type !== "status-response") {
+        const dataDoc = await deviceDataRef.add({
+          ...data,
+          timestamp,
+        });
+        const dataId = dataDoc.id;
 
-      console.log(`Data added to Firestore with ID: ${dataId}`);
+        console.log(`Data added to Firestore with ID: ${dataId}`);
+      }
+
+      //   console.log(type);
 
       // Broadcast the new data to the specific room (userId + deviceId)
       const roomName = `${userId}-${deviceId}`;
       try {
         if (type !== "pump-log") {
           io.to(roomName).emit("update", data); // Emit to the specific room
+        } else if (type === "status-response") {
+          // Handle status response
+          const roomName = `${userId}-${deviceId}`;
+          io.to(roomName).emit("update", {
+            type: "status-response", // Ensure frontend can identify status response
+            waterPumpStatus: waterPumpStatus,
+            nutrientPumpStatus: nutrientPumpStatus,
+          });
+          console.log(
+            `Status response received from device ${deviceId} and broadcasted.`
+          );
+          return; // Important: Exit to prevent data ref add for status-response
         } else {
           //   console.log("Pump log");
         }

@@ -78,7 +78,9 @@ const SummaryCards = ({
             {isLoading ? (
               <Skeleton className="h-6 w-full my-1" />
             ) : (
-              <div className="text-2xl font-bold">{data.humidity} %</div>
+              <div className="text-2xl font-bold">
+                {Number(data.humidity).toFixed(2)} %
+              </div>
             )}
             {/* <Progress className="h-2 my-1" /> */}
             <p className="text-xs text-muted-foreground">in the air</p>
@@ -93,7 +95,9 @@ const SummaryCards = ({
             {isLoading ? (
               <Skeleton className="h-6 w-full my-1" />
             ) : (
-              <div className="text-2xl font-bold">{data.UVS} µW/m²</div>
+              <div className="text-2xl font-bold">
+                {Number(data.UVS).toFixed(4)} µW/m²
+              </div>
             )}
             {/* <Progress className="h-2 my-1" /> */}
             <p className="text-xs text-muted-foreground">available</p>
