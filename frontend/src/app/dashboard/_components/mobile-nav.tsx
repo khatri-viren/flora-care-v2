@@ -66,6 +66,15 @@ const MobileNav = () => {
             <FileClock className="h-4 w-4" />
             Pump Trigger Logs
           </Link>
+          <Link
+            href="/dashboard/image-analysis"
+            className={cn(
+              `flex items-center gap-3 rounded-lg px-3 text-muted-foreground py-2 transition-all hover:text-primary `
+            )}
+          >
+            <FileClock className="h-4 w-4" />
+            Image Analysis
+          </Link>
         </nav>
 
         <div className="mt-auto">

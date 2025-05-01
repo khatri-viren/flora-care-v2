@@ -1,5 +1,13 @@
 "use client";
-import { Bell, FileClock, Home, Server, Settings } from "lucide-react";
+import {
+  Bell,
+  FileClock,
+  Home,
+  Image,
+  ImageIcon,
+  Server,
+  Settings,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
@@ -59,6 +67,15 @@ export default function Sidebar() {
             >
               <FileClock className="h-4 w-4" />
               Pump Trigger Logs
+            </Link>
+            <Link
+              href="/dashboard/image-analysis"
+              className={cn(
+                `flex items-center gap-3 rounded-lg px-3 text-muted-foreground py-2 transition-all hover:text-primary `
+              )}
+            >
+              <ImageIcon className="h-4 w-4" />
+              Image Analysis
             </Link>
             {/* <Link
               href="/ai-coaching"
