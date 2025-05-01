@@ -1,15 +1,16 @@
-# fly.toml app configuration file generated for backend-cold-shadow-2359 on 2024-11-18T11:44:05+05:30
+# fly.toml app configuration file generated for flora-care-v2 on 2025-05-02T01:44:58+05:30
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'backend-cold-shadow-2359'
+app = 'flora-care-v2'
 primary_region = 'bom'
 
 [build]
+  dockerfile = 'Dockerfile'
 
 [http_service]
-  internal_port = 3000
+  internal_port = 8080
   force_https = true
   auto_stop_machines = 'stop'
   auto_start_machines = true
@@ -17,6 +18,4 @@ primary_region = 'bom'
   processes = ['app']
 
 [[vm]]
-  memory = '1gb'
-  cpu_kind = 'shared'
-  cpus = 1
+  size = 'shared-cpu-1x'
