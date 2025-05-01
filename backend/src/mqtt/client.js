@@ -14,7 +14,11 @@ const mqttClient = mqtt.connect(mqttOptions);
 const topicPrefix = process.env.MQTT_TOPIC_PREFIX;
 mqttClient.on("connect", () => {
   console.log("Connected to MQTT broker");
+
   const topics = [`${topicPrefix}/#`, `${topicPrefix}/device/discovery/#`];
+  //  prod/#
+  //  prod/device/discovery/#
+
   mqttClient.subscribe(topics, (err) => {
     if (!err) {
       console.log(`Subscribed to topics: ${topics.join(", ")}`);
