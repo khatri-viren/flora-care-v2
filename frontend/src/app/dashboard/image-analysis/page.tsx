@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -7,8 +8,21 @@ import { toast } from "sonner";
 
 const Devices = () => {
   const [image, setImage] = useState<File | null>(null);
+  const [previewUrl, setPreviewUrl] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(false);
   const [result, setResult] = useState<string | null>(null);
+
+  const handleImageChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0] ?? null;
+    setImage(file);
+
+    if (file) {
+      const url = URL.createObjectURL(file);
+      setPreviewUrl(url);
+    } else {
+      setPreviewUrl(null);
+    }
+  };
 
   const handleAnalyze = async () => {
     if (!image) {
@@ -45,8 +59,21 @@ const Devices = () => {
       <Input
         type="file"
         className="w-fit"
-        onChange={(e) => setImage(e.target.files?.[0] ?? null)}
+        onChange={handleImageChange}
+        accept="image/*"
       />
+
+      {previewUrl && (
+        <div className="flex flex-col gap-2">
+          <Label>Preview</Label>
+          <img
+            src={previewUrl}
+            alt="Preview"
+            className="max-w-[300px] rounded-lg border"
+          />
+        </div>
+      )}
+
       <Button
         className="w-fit"
         size="sm"
