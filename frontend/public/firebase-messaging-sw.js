@@ -6,15 +6,7 @@ importScripts(
 );
 
 // Your web app's Firebase configuration
-const firebaseConfig = {
-  apiKey: "AIzaSyDsCCP46TCrA7XLrQO5JAB1YoMX_XZx_dk",
-  authDomain: "floracare-db9d6.firebaseapp.com",
-  projectId: "floracare-db9d6",
-  storageBucket: "floracare-db9d6.firebasestorage.app",
-  messagingSenderId: "737200184154",
-  appId: "1:737200184154:web:c66b485fef39631f4ff163",
-  measurementId: "G-RMP14690F2",
-};
+const firebaseConfig = "** REMOVED **";
 
 firebase.initializeApp(firebaseConfig);
 

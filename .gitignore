@@ -21,3 +21,4 @@ npm-debug.log
 *.seed
 *.pid.lock
 lib-cov
+admin-sdk.json
