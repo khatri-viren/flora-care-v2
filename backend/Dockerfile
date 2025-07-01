@@ -16,9 +16,9 @@ COPY . .
 # Set environment variables
 ENV PORT=8080
 ENV NODE_ENV=production
-ENV EMQX_HOST=rff61f13.ala.asia-southeast1.emqxsl.com
-ENV EMQX_USERNAME=backend
-ENV EMQX_PASSWORD=RfRM5cgVvWMvR3k
+ENV EMQX_HOST=**REMOVED**.emqxsl.com
+ENV EMQX_USERNAME=**REMOVED**
+ENV EMQX_PASSWORD=**REMOVED**
 ENV FIREBASE_CREDENTIALS='./src/config/admin-sdk.json'
 ENV MQTT_TOPIC_PREFIX=prod
 
